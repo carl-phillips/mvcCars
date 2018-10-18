@@ -17,7 +17,6 @@ public class CarDio {
 		em.persist(carToAdd);
 		em.getTransaction().commit();
 		em.close();
-		emfactory.close();
 	}
 
 	public List<Car> getAllCars() {

@@ -19,10 +19,17 @@ public class Car {
 	private String model;
 	private int year;
 	private boolean sold;
-	private String carSold;
 	
 	public Car(){
 
+	}
+	
+	public Car(String firstName, String lastName, String make, String model, int year) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.make = make;
+		this.model = model;
+		this.year = year;
 	}
 	
 	public Car(long id, String make, String model, int year, boolean sold) {
@@ -30,7 +37,6 @@ public class Car {
 		this.make = make;
 		this.model = model;
 		this.year = year;
-		this.sold = sold;
 	}
 
 	
@@ -90,12 +96,4 @@ public class Car {
 		this.sold = sold;
 	}
 	
-	public String carSold() {
-		if(sold == true) {
-			carSold = "Sold";
-		} else {
-			carSold = "Not Sold";
-		}
-		return carSold;
-	}
 }

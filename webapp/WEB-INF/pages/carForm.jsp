@@ -32,10 +32,6 @@
             <td><mvc:label path="year">Year</mvc:label></td>
             <td><mvc:input path="year" /></td>
         </tr>
-            <tr>
-            <td><mvc:label path="country">Country</mvc:label></td>
-            <td><mvc:select path="country" items="${countries}" /></td>
-        </tr>
         <tr>
 	        <td colspan="2">
                 <input type="submit" value="Submit" />

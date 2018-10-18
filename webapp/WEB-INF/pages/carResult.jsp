@@ -11,16 +11,16 @@
 <body> <h2>User Registration Result</h2>
     <table>
         <tr>
+            <td>ID</td>
+            <td>${c.id}</td>
+        </tr>
+        <tr>
             <td>First Name</td>
             <td>${c.firstName}</td>
         </tr>
         <tr>
             <td>Last name</td>
-            <td>${c.lastname}</td>
-        </tr>
-        <tr>
-            <td>ID</td>
-            <td>${c.id}</td>
+            <td>${c.lastName}</td>
         </tr>
         <tr>
             <td>Make</td>
@@ -33,10 +33,6 @@
         <tr>
             <td>Year</td>
             <td>${c.year}</td>
-        </tr>
-        <tr>
-            <td>Sold</td>
-            <td>${c.carSold}</td>
         </tr>
         </table>
 <a href = "viewAll.mvc">View all Cars</a>

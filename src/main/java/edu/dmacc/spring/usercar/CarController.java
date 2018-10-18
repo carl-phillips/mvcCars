@@ -20,8 +20,6 @@ public class CarController {
 			
 			modelAndView.setViewName("carForm");
 			modelAndView.addObject("car", new Car());
-			modelAndView.addObject("countries", countries);
-			
 			return modelAndView;
 	}
 		

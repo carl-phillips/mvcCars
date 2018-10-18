@@ -13,6 +13,10 @@
 	<c:forEach items="${all}" var="item">
 		<table>
 			<tr>
+				<td>ID</td>
+				<td>${item.id}</td>
+			</tr>
+			<tr>
 				<td>First Name</td>
 				<td>${item.firstName}</td>
 			</tr>
@@ -31,10 +35,6 @@
 			<tr>
 				<td>Year</td>
 				<td>${item.year}</td>
-			</tr>
-			<tr>
-				<td>Car Sold</td>
-				<td>${item.carSold}</td>
 			</tr>
 
 		</table>
