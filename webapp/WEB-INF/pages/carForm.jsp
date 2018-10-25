@@ -10,7 +10,7 @@
 </head>
 <body>
 <h2>Buy Car Form</h2>
-<mvc:form modelAttribute="car" action="result.mvc">
+<mvc:form name="carForm" modelAttribute="car" action="result.mvc" onsubmit="return check()">
 	<table>
 	    <tr>
 	        <td><mvc:label path="firstName">First Name</mvc:label></td>
@@ -41,4 +41,5 @@
 </mvc:form>
 <a href = "viewAll.mvc">View all Cars</a>
 </body>
+<script src="validate.js"></script>
 </html>

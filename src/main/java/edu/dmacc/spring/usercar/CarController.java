@@ -12,8 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class CarController {
 	@Autowired CarDio dio;
 	
-	private static final String[] countries = {"France", "United States", "Germany", "England"};
-	
 	@RequestMapping(value = "/form")
 		public ModelAndView car() {
 			ModelAndView modelAndView = new ModelAndView();
