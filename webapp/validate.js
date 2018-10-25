@@ -50,6 +50,10 @@ function validation(str) {
 		alert("All fields must be filled out");
 		return false;
 	} else if (hasNumber(str)) {
+		alert("Field may not contain number");
+		return false;
+	} else if (hasSpecial(str)) {
+		alert("Field may not contain special character");
 		return false;
 	}
 }
@@ -75,7 +79,16 @@ function validateNumber(str) {
 		alert("Year must be filled out");
 		location.reload();
 		return false;
-	} else if(str < "1900") {
+	} else if(hasLetter(str)) {
+		alert("Year cannot contain letters")
+		location.reload();
+		return false;
+	} else if(hasSpecial(str)) {
+		alert("Year cannot contain special character")
+		location.reload();
+		return false;
+	}
+	else if(str < "1900") {
 		alert("Car year under 1900 is invalid")
 		location.reload();
 		return false;
@@ -83,5 +96,24 @@ function validateNumber(str) {
 		alert("Car year over 2019 is invalid")
 		location.reload();
 		return false;
+	} 
+}
+
+function hasSpecial(str) {
+	var special = /[!@#$%^&*()_+=-~`{}[]|\:"';<>?.,]/;
+	
+	if(special.test(str)) {
+		return true;
+	}	
+}
+
+function hasLetter(str) {
+	var format = /[abcdefghijklmnopqrstuvwxyz]/;
+	var formatUP = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/;
+	
+	if(format.test(str)) {
+		return true;
+	} else if(formatUP.test(str)) {
+		return true;
 	}
 }
