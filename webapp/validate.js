@@ -10,27 +10,22 @@ function check() {
 	
 	validate(fn);
 	if(exit === true) {
-		location.reload();
 		return false;
 	}
 	validate(ln);
 	if(exit === true) {
-		location.reload();
 		return false;
 	}
 	validate(make);
 	if(exit === true) {
-		location.reload();
 		return false;
 	}
 	validateExpectNum(model);
 	if(exit === true) {
-		location.reload();
 		return false;
 	}
 	validateNumber(year);
 	if(exit === true) {
-		location.reload();
 		return false;
 	}
 }
